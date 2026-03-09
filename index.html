@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvey Le | Product Designer</title>
+    <meta name="description"
+        content="Portfolio of Harvey Le, a Product Designer specializing in creating intuitive and modern digital experiences.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="noise-overlay"></div>
+    <div class="gradient-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Harvey.</a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text-wrapper reveal fade-up">
+                    <p class="subtitle">Hi, I'm Harvey</p>
+                    <h1 class="hero-title">Crafting <span class="text-gradient">Intuitive</span><br>Digital Experiences.
+                    </h1>
+                    <p class="hero-description">I'm a Product Designer focused on solving complex problems with clean,
+                        scalable, and user-centered design solutions.</p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="#about" class="btn btn-secondary">More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section Placeholder -->
+        <section class="work" id="work">
+            <div class="container">
+                <div class="section-header reveal fade-up">
+                    <h2 class="section-title">Selected Case Studies</h2>
+                    <p class="section-subtitle">A look into my process and the problems I've solved.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Case Study 1 -->
+                    <div class="project-card reveal fade-up">
+                        <div class="project-image-wrapper">
+                            <img src="assets/sentrikey.png" alt="Key Management Dashboard" class="project-image">
+                            <div class="project-overlay">
+                                <a href="sentrikey.html" class="btn btn-primary">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag">March 2023</span>
+                                <span class="project-tag">SentriKey Access</span>
+                            </div>
+                            <h3 class="project-title">Key Management Dashboard Reimagined</h3>
+                            <p class="project-excerpt">A comprehensive redesign transforming complex device management
+                                into a seamless, intuitive experience centralized for critical alerts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="project-card reveal fade-up" style="transition-delay: 0.2s;">
+                        <div class="project-image-wrapper">
+                            <img src="assets/sentrilock.png" alt="Multi-App Experience" class="project-image">
+                            <div class="project-overlay">
+                                <a href="sentrilock.html" class="btn btn-primary">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag">June 2023</span>
+                                <span class="project-tag">SentriLock</span>
+                            </div>
+                            <h3 class="project-title">SentriLock's Multi-App Experience</h3>
+                            <p class="project-excerpt">Strategic redesign of the navigation framework for a complex real
+                                estate ecosystem, simplifying interactions globally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container about-content">
+                <div class="about-text reveal fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I specialize in translating complex business requirements into intuitive, user-friendly digital
+                        experiences. With a focus on scalable design systems and robust product architecture, I build
+                        solutions that users love and businesses trust.</p>
+                    <p>Currently, I'm working to simplify multi-app ecosystems and streamline centralized dashboards for
+                        device management.</p>
+                    <a href="#contact" class="btn btn-secondary" style="margin-top: 1rem;">Let's Connect</a>
+                </div>
+                <div class="about-visual reveal fade-up" style="transition-delay: 0.2s;">
+                    <div class="abstract-shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="reveal fade-up">
+                    <h2 class="contact-title">Let's create something <span class="text-gradient">amazing.</span></h2>
+                    <p class="contact-text">I'm currently open to new opportunities. Whether you have a question or just
+                        want to say hi, I'll try my best to get back to you!</p>
+                    <a href="mailto:hello@harveyle.com" class="btn btn-primary">Say Hello</a>
+                </div>
+
+                <div class="social-links reveal fade-up" style="transition-delay: 0.2s; margin-top: 3rem;">
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Dribbble">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.883 1.368 1.48 2.872 1.782 4.469-1.229-.324-2.589-.523-4.045-.583-.242-.917-.504-1.841-.786-2.76.842-.26 1.724-.512 2.65-.745.137.202.271.408.399.619zm-3.612-4.06c.928.948 1.637 2.053 2.097 3.268-1.045.244-2.062.518-3.051.815-.758-1.581-1.614-3.1-2.56-4.523 1.343-.097 2.502.247 3.514.44zm-7.065-1.127c1.3-.591 2.763-.923 4.316-.923.633 0 1.25.048 1.848.141.879 1.403 1.688 2.894 2.42 4.453-1.428.406-2.903.743-4.383 1.002-1.785-.487-3.411-1.391-4.839-2.536 1.155-2.007 2.859-3.793 5.35-4.116zm-5.064 7.542c1.474-1.056 3.016-1.848 4.609-2.28 1.458.749 2.784 1.708 3.968 2.859-1.309.289-2.671.517-4.062.671-1.597 1.25-2.964 2.825-4.008 4.629-1.088-1.716-1.72-3.729-1.72-5.879 0-.441.031-.876.091-1.304zm2.188 7.371c1.171-1.559 2.62-2.968 4.291-4.09 1.32.147 2.58.358 3.774.625-.138.868-.317 1.734-.54 2.589-1.088 1.09-2.43 1.811-3.837 2.185-1.284-.13-2.528-.588-3.688-1.309zm6.75.918c1.372-.452 2.64-1.261 3.655-2.298.24-.863.435-1.745.589-2.637 1.378.077 2.668.271 3.844.577-.323 1.777-1.154 3.39-2.355 4.654-1.189 1.218-2.719 2.062-4.409 2.441-1.1.285-2.261.354-3.418.196-.402-.871-.828-1.717-1.291-2.548z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Harvey Le. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

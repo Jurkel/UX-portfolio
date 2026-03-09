@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-App Navigation Framework | Harvey Le</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="noise-overlay"></div>
+    <div class="gradient-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Harvey.</a>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">Work</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="cs-hero container">
+            <h1 class="cs-hero-title reveal fade-up">Unified Multi-App Navigation Framework</h1>
+
+            <div class="cs-meta reveal fade-up" style="transition-delay: 0.1s;">
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Role</span>
+                    <span class="cs-meta-value">Lead Product Designer</span>
+                </div>
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Client</span>
+                    <span class="cs-meta-value">SentriLock</span>
+                </div>
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Timeline</span>
+                    <span class="cs-meta-value">Jun 2023 - Dec 2023</span>
+                </div>
+            </div>
+
+            <div class="cs-hero-image-wrapper reveal fade-up" style="transition-delay: 0.2s;">
+                <img src="assets/sentrilock.png" alt="Multi-App Experience Architecture">
+            </div>
+        </section>
+
+        <section class="cs-content container prose">
+            <div class="reveal fade-up">
+                <h2>Project Overview</h2>
+                <p>At the intersection of two critical real estate applications—a lockbox management system and an
+                    appointment scheduling platform—users were experiencing significant navigation friction. Our legacy
+                    system, developed nearly two decades ago, had prioritized expanding sales objectives over
+                    maintaining a cohesive user experience.</p>
+                <p>As we kicked off a major technical migration from PHP to Angular, I identified a strategic
+                    opportunity to completely reimagine our navigation structure. By fundamentally addressing how users
+                    move between these two distinct but related tools, we set out to build an intuitive, scalable system
+                    that worked for everyone.</p>
+            </div>
+
+            <div class="cs-metrics reveal fade-up">
+                <div class="cs-metric-card">
+                    <h4>100%</h4>
+                    <p>User Preference for Vertical Nav</p>
+                </div>
+                <div class="cs-metric-card">
+                    <h4>4</h4>
+                    <p>Iterative Testing Cycles</p>
+                </div>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>The Problem Space</h2>
+                <p>Our collaboration with customer support surfaced a persistent issue: users were constantly confused
+                    about which application they were actually using at any given time.</p>
+                <ul>
+                    <li><strong>Shared features & similar naming</strong> caused frequent frustration and task
+                        abandonment.</li>
+                    <li><strong>Permission-based hidden links</strong> made the mental model of the app architecture
+                        completely unpredictable.</li>
+                    <li><strong>Mounting Support Tickets:</strong> Application confusion was consistently highlighted as
+                        a top driver of negative customer feedback.</li>
+                </ul>
+            </div>
+
+            <div class="cs-callout reveal fade-up">
+                <p>"Between the lockbox app and the scheduling tool, our users were getting lost. We needed a unified
+                    system that made navigating between them feel effortless rather than confusing."</p>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Discovery & Strategy</h2>
+                <p>Working closely with our customer advisory group and support teams, we initiated a comprehensive
+                    redesign process. The immediate goal was to simplify navigation overhead while retaining full
+                    functionality across both legacy platforms.</p>
+
+                <img src="assets/persona-desmond.jpg" alt="Persona Profile: Desmond Baker" class="cs-inline-image"
+                    style="margin: 2rem 0;">
+
+                <p>We began by exploring various groupings of sub-navigation menu items. Our initial testing phase
+                    focused on minimizing categories without sacrificing clarity. We put real-world scenarios in front
+                    of our users, like Desmond, to understand their mental models and daily workflows.</p>
+            </div>
+
+            <div class="cs-full-width-image reveal fade-up">
+                <img src="assets/sitemap.jpg" alt="Complex System Architecture Sitemap" style="background: white;">
+                <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">Visualizing the complex access
+                    and permission structure across varying user roles.</p>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Design & Iteration</h2>
+                <p>Throughout four iterative design cycles, we pitted two major navigation paradigms against each other:
+                    a traditional top-horizontal navigation bar versus a left-aligned vertical navigation system
+                    enhanced with clear iconography.</p>
+
+                <div class="cs-image-grid">
+                    <img src="assets/wireframe-horizontal.jpg" alt="Horizontal Navigation Exploration"
+                        class="cs-inline-image" style="background: white; padding: 1rem;">
+                    <img src="assets/wireframe-dropdown.jpg" alt="Horizontal Dropdown Interaction"
+                        class="cs-inline-image" style="background: white; padding: 1rem;">
+                </div>
+
+                <p style="margin-top: 1rem;">Initial explorations with a horizontal layout (above) led to overly complex
+                    dropdown interactions. We ultimately pivoted to testing a vertical structure (below) which vastly
+                    improved scalability.</p>
+
+                <img src="assets/wireframe-vertical.jpg" alt="Vertical Navigation Exploration" class="cs-inline-image"
+                    style="margin: 2rem 0; background: white; padding: 1rem;">
+
+                <p>Strict adherence to our newly established design system was crucial here to ensure visual
+                    consistency. The process wasn't without compromise—we occasionally had to deprecate deeply buried,
+                    unused features to clean up the architecture. This required extensive stakeholder communication and
+                    collaborative alignment to ensure business objectives were met while prioritizing the user.</p>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>The Final Solution & Outcome</h2>
+                <p>The shipped design delivered a clear, visually prominent, and minimalistic left-aligned vertical
+                    navigation menu. It features descriptive labels and recognizable icons that orient users instantly.
+                </p>
+                <p>During validation, all of our test participants favored this vertical approach, citing its clarity,
+                    conciseness, and strict alignment with modern industry standards. The new navigation system
+                    successfully bridged the gap between the two disparate applications, simplifying the overall user
+                    experience.</p>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Learnings & Impact</h2>
+                <p>Implementing this unified design system not only created visual consistency but also established a
+                    highly scalable foundation for future expansions.</p>
+                <p><strong>Key Reflection:</strong> This project proved that advocating for user-centric design during a
+                    purely technical refactor (PHP to Angular) can fundamentally upgrade the product experience. We
+                    didn't just update the underlying code; we established a new standard for interface design across
+                    our entire company ecosystem.</p>
+            </div>
+
+            <div class="next-project reveal fade-up">
+                <h3>Up Next</h3>
+                <a href="sentrikey.html" class="btn btn-secondary" style="margin-top: 1rem;">View Key Management
+                    Dashboard</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
