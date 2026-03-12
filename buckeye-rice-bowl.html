@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Buckeye Rice Bowl | Harvey Le</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="noise-overlay"></div>
+    <div class="gradient-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Harvey.</a>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">Work</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="cs-hero container">
+            <h1 class="cs-hero-title reveal fade-up">The Buckeye Rice Bowl</h1>
+
+            <div class="cs-meta reveal fade-up" style="transition-delay: 0.1s;">
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Role</span>
+                    <span class="cs-meta-value">Commissioner & Designer</span>
+                </div>
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Project</span>
+                    <span class="cs-meta-value">Community Design</span>
+                </div>
+                <div class="cs-meta-item">
+                    <span class="cs-meta-label">Timeline</span>
+                    <span class="cs-meta-value">2019 - Present</span>
+                </div>
+            </div>
+
+            <div class="cs-hero-image-wrapper reveal fade-up" style="transition-delay: 0.2s;">
+                <img src="assets/buckeye-rice-bowl-hero.jpg" alt="The Buckeye Rice Bowl"> <!-- Placeholder -->
+            </div>
+        </section>
+
+        <section class="cs-content container prose">
+            <div class="reveal fade-up">
+                <h2>Project Overview</h2>
+                <p>The Buckeye Rice Bowl is an 12-person fantasy football league rooted in Columbus, Ohio. What started
+                    as a casual competition among close friends has become the primary thread connecting a group of
+                    people spread across different cities and life stages. I joined the league a decade ago and took
+                    over as commissioner five years ago with a clear goal: transform a passive game into an active,
+                    year-round community.</p>
+                <p>This case study documents the design decisions, systems, and rituals I built to increase engagement,
+                    reduce churn, and make every league mate feel like an invested stakeholder — not just a passive
+                    player.</p>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>The Problem</h2>
+                <p>Fantasy football leagues have a natural engagement cliff. The draft creates a spike of excitement,
+                    but interest drops steeply after Week 4. Managers who fall behind in the standings disengage
+                    entirely. Group chats go quiet. The league stops feeling like a shared experience and starts feeling
+                    like a chore.</p>
+                <p>The Buckeye Rice Bowl had a deeper problem layered on top of this: it was the main way I — and
+                    several members — stayed connected with friends back home. Losing engagement in the league meant
+                    losing a genuine social thread.</p>
+
+                <h3>Pain Points Identified</h3>
+                <ul>
+                    <li>Engagement dropped sharply mid-season for managers outside playoff contention</li>
+                    <li>No consistent communication channel beyond the Sleeper app’s limited native tools</li>
+                    <li>No accountability mechanisms for dues, trades, or league decisions</li>
+                    <li>Zero off-season touchpoints — the league “died” from January through August</li>
+                    <li>No recognition for great play, only punishment for last place</li>
+                </ul>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Research & Discovery</h2>
+                <p>Before building systems, I needed to understand what the league actually wanted. I ran informal
+                    surveys and group discussions to surface unspoken frustrations and desires.</p>
+
+                <h3>Research Methods</h3>
+                <ul>
+                    <li>Annual pre-season survey sent to all 11 managers</li>
+                    <li>End-of-season retrospective questions via group chat</li>
+                    <li>Direct 1:1 conversations with disengaged managers to understand drop-off reasons</li>
+                    <li>Observation of Sleeper app activity — tracking who viewed, reacted, and posted</li>
+                </ul>
+
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Managers wanted more ways to win beyond the championship trophy</li>
+                    <li>The group valued the social ritual as much as the competition itself</li>
+                    <li>Financial stakes (even small ones) dramatically increased attention and accountability</li>
+                    <li>Members craved recognition — feeling “seen” within the group increased investment</li>
+                    <li>Off-season silence was the single biggest reason people considered leaving</li>
+                </ul>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Design Solutions</h2>
+                <p>Each initiative below was designed to solve a specific engagement problem. They compound: the
+                    newsletter drives conversation, the constitution creates trust, the awards ceremony creates
+                    anticipation, and the annual meeting creates accountability.</p>
+
+                <h3>01 — The Weekly Newsletter</h3>
+                <p>The single highest-impact change I made. Every week during the season I wrote and distributed a
+                    newsletter covering matchup previews, power rankings, manager spotlights, and league drama. It
+                    transformed passive consumption into active discussion.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Give every manager a reason to check in, regardless of their
+                        record. Create shared narrative and inside language that builds group identity. Surface
+                        individual storylines so managers felt personally recognized.</li>
+                    <li><strong>Outcomes:</strong> Reply rates and group chat activity increased measurably each week
+                        the newsletter went out. Managers in losing positions remained engaged because the newsletter
+                        featured everyone, not just contenders.</li>
+                </ul>
+
+                <h3>02 — League Constitution & Bylaws</h3>
+                <p>Ambiguity kills communities. I wrote a formal constitution covering trade deadlines, dispute
+                    resolution, payout schedules, promotion/relegation rules, and voting procedures. It formalized
+                    trust.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Reduce commissioner arbitration burden by creating a shared
+                        source of truth. Give members ownership — they voted on amendments, making the document theirs.
+                        Signal that this league was serious and worth investing in.</li>
+                </ul>
+
+                <h3>04 — Weekly Bonus Mechanics</h3>
+                <p>I designed weekly bonus competitions — highest scoring bench, best waiver pickup, closest matchup —
+                    to give every manager something to compete for beyond the weekly win/loss. These created additional
+                    moments of celebration and rivalry.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Reduce disengagement from managers out of playoff contention.
+                        Create micro-narratives within the season that the newsletter could amplify. Diversify the ways
+                        to “win,” broadening the competitive surface area.</li>
+                </ul>
+
+                <h3>05 — Strict Money Management System</h3>
+                <p>I implemented a transparent dues collection and payout system with documented deadlines, escrow
+                    practices, and publicly shared financial ledgers. When money is involved, trust and clarity are
+                    non-negotiable.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Eliminate disputes and late payments with a documented process.
+                        Build credibility as a commissioner through radical financial transparency. Increase stakes in a
+                        way that felt fair to all income levels.</li>
+                </ul>
+
+                <h3>06 — Annual League Meeting</h3>
+                <p>Once a year, I organized a league meeting — in-person when possible, video call otherwise — to recap
+                    the season, vote on rule changes, and set expectations for the next year. It turned a passive
+                    digital experience into a lived event.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Create an off-season anchor that maintained social momentum. Give
+                        members a structured venue for grievances and ideas. Reinforce that this league was a real
+                        community, not just an app.</li>
+                </ul>
+
+                <h3>07 — End-of-Season Awards Ceremony</h3>
+                <p>I designed a full awards program recognizing every manager for at least one achievement each season.
+                    Categories ranged from “Best Draft” and “Most Improved” to comedic honors like “Best Excuse for a
+                    Bad Week.” Everyone won something.</p>
+                <ul>
+                    <li><strong>Design Goals:</strong> Close the season with a moment of celebration rather than a quiet
+                        ending. Ensure no manager left feeling invisible or unrecognized. Create shareable, memorable
+                        moments that people looked forward to returning for.</li>
+                </ul>
+
+                <h3>08 — The Hardest Vote: Removing a Member</h3>
+                <p>Not every design decision is a feature. Some are policies. One of the most consequential decisions I
+                    made as commissioner was initiating a vote to remove a member from the league — a situation the
+                    constitution was specifically written to handle fairly.</p>
+                <p>Over time, one member’s behavior was consistently detracting from the experience — disengagement,
+                    lack of accountability, and friction that dampened the group’s energy. As commissioner, I recognized
+                    that protecting the league’s culture required action, even when that action was uncomfortable.</p>
+                <p>The constitution required a unanimous vote from all remaining members to remove anyone from the
+                    league. That threshold was intentional — it ensured removal could never be political or arbitrary.
+                    Out of 11 remaining members, all 11 voted in favor. The decision carried, and a replacement member
+                    was brought in to restore the league to its full 12-person roster.</p>
+
+                <h4>The Process</h4>
+                <ul>
+                    <li>Issue formally raised under the constitution’s removal clause</li>
+                    <li>Private discussion held with all 11 remaining members before any vote was called</li>
+                    <li>Unanimous vote conducted — 11 of 11 members in favor of removal</li>
+                    <li>New member identified, vetted by the group, and onboarded to restore the 12-person roster</li>
+                </ul>
+
+                <h4>Why It Mattered as a Design Decision</h4>
+                <ul>
+                    <li>The constitution made a painful decision feel legitimate and fair — the process protected
+                        everyone, including the person being removed</li>
+                    <li>The unanimous threshold prevented any perception of bias or a commissioner overstepping
+                        authority</li>
+                    <li>It proved that the league’s culture was worth protecting — community health was prioritized over
+                        avoiding an awkward conversation</li>
+                    <li>The successful onboarding of a replacement member validated the league’s reputation — people
+                        wanted to join, which itself signals a healthy product</li>
+                </ul>
+            </div>
+
+            <div class="reveal fade-up">
+                <h2>Results & Impact</h2>
+                <p>The compounding effect of these systems transformed the Buckeye Rice Bowl from a passive app-based
+                    game into a structured community with real rituals, accountability, and shared identity.</p>
+
+                <h3>Qualitative Outcomes</h3>
+                <ul>
+                    <li>Members consistently cited the league as a meaningful way to stay connected with home</li>
+                    <li>No involuntary departures in five years; any exits were life-circumstance-driven</li>
+                    <li>The newsletter became something members looked forward to and quoted in conversation</li>
+                    <li>The awards ceremony is now considered the most anticipated event of the league year</li>
+                    <li>New members join with existing awareness of the league’s reputation within the friend group</li>
+                </ul>
+            </div>
+
+            <div class="next-project reveal fade-up">
+                <h3>Up Next</h3>
+                <a href="sentrikey.html" class="btn btn-primary" style="margin-top: 1rem;">View Key Management
+                    Dashboard</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
