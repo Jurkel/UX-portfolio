@@ -69,6 +69,25 @@
                     player.</p>
             </div>
 
+            <div class="cs-metrics reveal fade-up" style="margin-inline: 0;">
+                <div class="cs-metric-card">
+                    <h4>12</h4>
+                    <p>League Members<br><span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400;">100% retention over 5 years</span></p>
+                </div>
+                <div class="cs-metric-card">
+                    <h4>5</h4>
+                    <p>Years as Commissioner<br><span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400;">2019–2025</span></p>
+                </div>
+                <div class="cs-metric-card">
+                    <h4>10</h4>
+                    <p>Year League Age<br><span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400;">Founded in Columbus, Ohio</span></p>
+                </div>
+                <div class="cs-metric-card">
+                    <h4>7+</h4>
+                    <p>Engagement Systems<br><span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400;">Built from scratch</span></p>
+                </div>
+            </div>
+
             <div class="reveal fade-up">
                 <h2>The Problem</h2>
                 <p>Fantasy football leagues have a natural engagement cliff. The draft creates a spike of excitement,
@@ -78,6 +97,60 @@
                 <p>The Buckeye Rice Bowl had a deeper problem layered on top of this: it was the main way I — and
                     several members — stayed connected with friends back home. Losing engagement in the league meant
                     losing a genuine social thread.</p>
+
+                <div class="cs-chart-container" style="margin: var(--space-xl) 0; padding: var(--space-lg); background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px; backdrop-filter: var(--glass-blur);">
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.25rem;">Engagement Over Time</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Pre & Post Commissioner Handover (Typical Season Arc)</p>
+                    
+                    <svg viewBox="0 0 800 300" style="width: 100%; height: auto; overflow: visible;">
+                        <!-- Grid Lines -->
+                        <line x1="50" y1="250" x2="750" y2="250" stroke="var(--glass-border)" stroke-width="1" />
+                        <line x1="50" y1="150" x2="750" y2="150" stroke="var(--glass-border)" stroke-width="1" stroke-dasharray="4" />
+                        <line x1="50" y1="50" x2="750" y2="50" stroke="var(--glass-border)" stroke-width="1" stroke-dasharray="4" />
+                        
+                        <!-- Y-Axis Labels -->
+                        <text x="40" y="255" fill="var(--text-muted)" font-size="12" text-anchor="end" font-family="var(--font-body)">Low</text>
+                        <text x="40" y="155" fill="var(--text-muted)" font-size="12" text-anchor="end" font-family="var(--font-body)">Med</text>
+                        <text x="40" y="55" fill="var(--text-muted)" font-size="12" text-anchor="end" font-family="var(--font-body)">High</text>
+                        
+                        <!-- X-Axis Labels -->
+                        <text x="50" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Pre-Draft</text>
+                        <text x="190" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Draft</text>
+                        <text x="330" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Week 4</text>
+                        <text x="470" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Mid-Season</text>
+                        <text x="610" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Playoffs</text>
+                        <text x="750" y="275" fill="var(--text-muted)" font-size="12" text-anchor="middle" font-family="var(--font-body)">Off-Season</text>
+
+                        <!-- "Before" Line (Fades off after week 4) -->
+                        <path d="M 50 200 L 190 60 L 330 180 L 470 240 L 610 240 L 750 245" fill="none" stroke="var(--text-muted)" stroke-width="3" stroke-dasharray="6" stroke-linecap="round" stroke-linejoin="round" />
+                        
+                        <!-- "After" Line (Consistent Engagement) -->
+                        <path d="M 50 160 L 190 50 L 330 90 L 470 120 L 610 80 L 750 140" fill="none" stroke="url(#chartGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        
+                        <!-- Points for "After" Line -->
+                        <circle cx="50" cy="160" r="4" fill="var(--accent-primary)" />
+                        <circle cx="190" cy="50" r="4" fill="var(--accent-primary)" />
+                        <circle cx="330" cy="90" r="4" fill="var(--accent-primary)" />
+                        <circle cx="470" cy="120" r="4" fill="var(--accent-primary)" />
+                        <circle cx="610" cy="80" r="4" fill="var(--accent-primary)" />
+                        <circle cx="750" cy="140" r="4" fill="var(--accent-primary)" />
+
+                        <!-- Legend -->
+                        <rect x="580" y="20" width="12" height="12" rx="2" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-dasharray="2" />
+                        <text x="600" y="30" fill="var(--text-muted)" font-size="12" font-family="var(--font-body)">Before (2014-2018)</text>
+                        
+                        <rect x="580" y="45" width="12" height="12" rx="2" fill="var(--accent-primary)" />
+                        <text x="600" y="55" fill="var(--text-main)" font-size="12" font-family="var(--font-body)">After (2019-2025)</text>
+
+                        <!-- Definitions -->
+                        <defs>
+                            <linearGradient id="chartGradient" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="var(--accent-primary)" />
+                                <stop offset="100%" stop-color="var(--accent-secondary)" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
 
                 <h3>Pain Points Identified</h3>
                 <ul>
@@ -102,6 +175,123 @@
                     <li>Observation of Sleeper app activity — tracking who viewed, reacted, and posted</li>
                 </ul>
 
+                <!-- Survey Data Visual -->
+                <div class="cs-survey-container" style="margin: var(--space-xl) 0; padding: var(--space-lg); background: var(--bg-secondary); border: 1px solid var(--glass-border); border-radius: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); border-bottom: 1px solid var(--glass-border); padding-bottom: var(--space-md); flex-wrap: wrap; gap: 0.5rem;">
+                        <h3 style="margin: 0; font-size: 1.25rem;">2019 League Manager Survey</h3>
+                        <span class="project-tag" style="margin: 0; background: var(--accent-gradient); color: white; border: none; font-size: 0.75rem;">n = 11 Respondents</span>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-md);">
+                        
+                        <!-- Q1: Quantitative Bar Chart -->
+                        <div style="background: var(--glass-bg); padding: var(--space-md); border-radius: 12px; border: 1px solid var(--glass-border);">
+                            <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-main); margin-bottom: 1.25rem; line-height: 1.4;">Is this league a critical source of communication between you and your hometown friends?</p>
+                            
+                            <div style="margin-bottom: 0.75rem;">
+                                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                                    <span style="color: var(--text-muted);">Yes, absolutely</span>
+                                    <span style="color: var(--text-main); font-weight: 600;">9 votes</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                    <div style="width: 82%; background: var(--accent-gradient); height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                                    <span style="color: var(--text-muted);">No, but it's nice to have</span>
+                                    <span style="color: var(--text-main); font-weight: 600;">2 votes</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                    <div style="width: 18%; background: var(--text-muted); height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2: Quantitative Rating with Mini Histogram -->
+                        <div style="background: var(--glass-bg); padding: var(--space-md); border-radius: 12px; border: 1px solid var(--glass-border);">
+                            <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.4;">On a scale of 1-10, how important is this league to you?</p>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                                <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-top: 0.5rem;">
+                                    <span style="font-size: 3rem; font-weight: 800; color: var(--accent-primary); line-height: 1; letter-spacing: -0.05em;">8.5</span>
+                                    <span style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">Average</span>
+                                </div>
+                                
+                                <div style="display: flex; gap: 4px; height: 40px; align-items: flex-end; width: 120px;">
+                                    <!-- Histogram Bars -->
+                                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 2px 2px 0 0; height: 15px;"></div>
+                                        <span style="font-size: 0.65rem; color: var(--text-muted);">7 (2)</span>
+                                    </div>
+                                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                        <div style="width: 100%; background: rgba(255,255,255,0.2); border-radius: 2px 2px 0 0; height: 25px;"></div>
+                                        <span style="font-size: 0.65rem; color: var(--text-muted);">8 (3)</span>
+                                    </div>
+                                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                        <div style="width: 100%; background: rgba(59, 130, 246, 0.4); border-radius: 2px 2px 0 0; height: 15px;"></div>
+                                        <span style="font-size: 0.65rem; color: var(--accent-secondary);">9 (2)</span>
+                                    </div>
+                                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                                        <div style="width: 100%; background: var(--accent-primary); border-radius: 2px 2px 0 0; height: 40px;"></div>
+                                        <span style="font-size: 0.65rem; color: var(--accent-primary); font-weight: 600;">10 (4)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md);">
+                        
+                        <!-- Q3: Qualitative -->
+                        <div style="background: var(--glass-bg); padding: var(--space-md); border-radius: 12px; border: 1px solid var(--glass-border);">
+                            <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-main); margin-bottom: 0.75rem; line-height: 1.4;">Why do you think engagement decreases after week 4-5?</p>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
+                                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                                    <span style="color: var(--text-muted);">Team starts 0-4/out of contention</span>
+                                    <span style="color: var(--text-main); font-weight: 600;">6</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                                    <span style="color: var(--text-muted);">Nothing left to win but the championship</span>
+                                    <span style="color: var(--text-main); font-weight: 600;">3</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                                    <span style="color: var(--text-muted);">Busy with life/simply forget</span>
+                                    <span style="color: var(--text-main); font-weight: 600;">2</span>
+                                </div>
+                            </div>
+                            
+                            <div style="background: rgba(0,0,0,0.2); padding: 0.75rem 1rem; border-left: 2px solid var(--accent-secondary); border-radius: 0 8px 8px 0; font-size: 0.85rem; color: var(--text-muted); font-style: italic; line-height: 1.5;">
+                                "Once people realize their team is bad and they probably won't make the playoffs, there's literally no reason to check the app or talk in the chat."
+                            </div>
+                        </div>
+
+                        <!-- Q4 & Q5 -->
+                        <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                            
+                            <div style="background: var(--glass-bg); padding: var(--space-md); border-radius: 12px; border: 1px solid var(--glass-border); flex: 1;">
+                                <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-main); margin-bottom: 0.75rem; line-height: 1.4;">What mechanics could improve the dynamic between members?</p>
+                                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                                    <span style="background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); color: var(--accent-primary); padding: 0.35rem 0.65rem; border-radius: 100px; font-size: 0.75rem;">Weekly Prizes / Side Bets (5)</span>
+                                    <span style="background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); color: var(--accent-secondary); padding: 0.35rem 0.65rem; border-radius: 100px; font-size: 0.75rem;">More Chat Activity / Rivalries (4)</span>
+                                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-muted); padding: 0.35rem 0.65rem; border-radius: 100px; font-size: 0.75rem;">In-Person Events (2)</span>
+                                </div>
+                            </div>
+                            
+                            <div style="background: var(--glass-bg); padding: var(--space-md); border-radius: 12px; border: 1px solid var(--glass-border); flex: 1;">
+                                <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.4;">What are ways we could increase overall engagement?</p>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-style: italic; line-height: 1.5; border-left: 2px solid var(--accent-primary); padding-left: 0.75rem;">
+                                    "We need reasons to talk to each other outside of Sunday mornings when the games start."
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
                 <h3>Key Findings</h3>
                 <ul>
                     <li>Managers wanted more ways to win beyond the championship trophy</li>
@@ -122,6 +312,7 @@
                 <p>The single highest-impact change I made. Every week during the season I wrote and distributed a
                     newsletter covering matchup previews, power rankings, manager spotlights, and league drama. It
                     transformed passive consumption into active discussion.</p>
+                <img src="assets/newsletter.jpg" alt="The Weekly Newsletter" class="cs-inline-image" style="margin: var(--space-md) 0 var(--space-lg);">
                 <ul>
                     <li><strong>Design Goals:</strong> Give every manager a reason to check in, regardless of their
                         record. Create shared narrative and inside language that builds group identity. Surface
